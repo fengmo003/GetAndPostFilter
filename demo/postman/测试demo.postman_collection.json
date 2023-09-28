@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "a3607269-efa1-47a7-9710-5f29db958d49",
+		"name": "测试demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "11292228"
+	},
+	"item": [
+		{
+			"name": "测试get和post请求加密解密",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"1234\",\r\n    \"sex\":\"111\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8088/test?name=123&sex=aaa",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"test"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "123"
+						},
+						{
+							"key": "sex",
+							"value": "aaa"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
